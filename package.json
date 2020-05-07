@@ -1,0 +1,37 @@
+{
+  "name": "mi-report",
+  "version": "1.0.0",
+  "description": "web report",
+  "main": "dist/cjs/mi-report.js",
+  "unpkg": "dist/umd/mi-report.js",
+  "module": "dist/es/mi-report.js",
+  
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && rollup -c"
+  },
+  "keywords": [
+    "web-report"
+  ],
+  "author": "Zhang Peng",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "cross-env": "^7.0.0",
+    "rimraf": "^3.0.1",
+    "rollup": "^1.31.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-terser": "^5.2.0",
+    "rollup-plugin-uglify": "^6.0.4"
+  },
+  "dependencies": {
+    "loose-envify": "^1.4.0",
+    "symbol-observable": "^1.2.0"
+  }
+}
